@@ -1,9 +1,9 @@
 {
-    "name": "cps",
+    "name": "generic-iterator",
     "description": "A continuation passing style library to help the coding of asynced programs in Javascript/Node.js.",
     "main": "./lib/main",
     "author": "Chiyan Chen",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository" : {
         "type" : "git",
         "url" : "https://github.com/redblaze/generic-iterator.git"
