@@ -1,0 +1,34 @@
+{
+    "name": "cps",
+    "description": "A continuation passing style library to help the coding of asynced programs in Javascript/Node.js.",
+    "main": "./lib/main",
+    "author": "Chiyan Chen",
+    "version": "0.0.1",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/redblaze/generic-iterator.git"
+    },
+    "bugs" : {
+        "url" : "https://github.com/redblaze/generic-iterator/issues"
+    },
+    "licenses" : [
+        {
+            "type" : "MIT",
+            "url" : "https://github.com/redblaze/generic-iterator/raw/master/LICENSE"
+        }
+    ],
+    "jam": {
+        "main": "lib/main.js",
+        "include": [
+            "lib/main.js",
+            "README.md",
+            "LICENSE"
+        ]
+    },
+    "dependencies": {
+        "cps": "*",
+        "better-js-class": "*",
+        "generic-pool": "*",
+        "underscore": "*"
+    }
+}
