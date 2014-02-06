@@ -6,7 +6,7 @@ Example:
 ```js
 var Class = require('better-js-class');
 var cps = require('cps');
-var Iterator = require('../lib/main.js');
+var Iterator = require('generic-iterator');
 
 var cb = function(err, res) {
     if(err) {
