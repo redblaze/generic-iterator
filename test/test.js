@@ -1,7 +1,9 @@
 
 var Class = require('better-js-class');
 var cps = require('cps');
+var $U = require('underscore');
 var Iterator = require('../lib/main.js');
+
 
 var cb = function(err, res) {
     if(err) {
@@ -29,10 +31,16 @@ var Processor = Class({
     }
 });
 
+$U.extend(Processor, {
+    factory: function(cb) {
+        cb(null, new Processor());
+    }
+});
+
 var MyIterator = Class(Iterator, {
     _init: function() {
         this.parent._init.call(this, {
-            max: 1,
+            max: 10,
             ProcessorClass: Processor
         });
     },
